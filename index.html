@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+  
+</head>
+<body>
+    <div class="container">
+        <form name="PizzaForm">
+            <h1>The JavaScript Pizza Parlor</h1>
+            <p>
+                <h4>Step 1: Enter your name, Email address, and phone number</h4>
+                <font face="Courier New">
+                    Name: &nbsp;&nbsp;&nbsp; <input type="text" name="customer" size="50"><br> 
+                    Address: <input type="text" name="address" size="50"><br> 
+                    City: &nbsp;&nbsp;&nbsp; <input type="text" name="City" size="15"> 
+                    State: <input class="state" type="text" name="state" size="2"> 
+                    Zip-Code:  <input type="number" name="zip" size="5"><br>
+                    Phone: &nbsp;&nbsp;&nbsp;<input type="number" name="phone" size="50"> 
+
+                </font>
+            </p>
+            <p>
+                <h4>Step 2: Select the size of the Pizza you want.</h4>
+                <font face="Courier New">
+                    <input type="radio" name="sizes"> Small <input type="radio" name="sizes"> Medium <input type="radio" name="sizes"> Large
+                </font></p>
+            <p>
+                <h4>Step 3: Select the Pizza toppings you want on the Menu.</h4>
+                <font face="Courier New">
+                        <input type="checkbox" name="toppings"> Pepperoni
+                        <input type="checkbox" name="toppings"> Canadian bacon
+                        <input type="checkbox" name="toppings"> Sausage <br>
+                        <input type="checkbox" name="toppings">Mushrooms
+                        <input type="checkbox" name="toppings">Pineapple 
+                        <input type="checkbox" name="toppings"> Black Olives <br>
+                </font>
+            </p>
+            <input class="button1" type="button" value="Submit Order" onclick=doSubmit()>
+            <input class="button2" type="button" value="Clear Entries" onclick=doClear()>
+        </form>
+    </div>    
+    
+
+
+
+    <script defer src="./script.js"></script>
+</body>
+</html>
